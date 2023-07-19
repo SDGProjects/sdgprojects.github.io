@@ -40,7 +40,7 @@ jobs:
         run: npm add -g @unlighthouse/cli puppeteer
 
       - name: Unlighthouse assertions and client
-        run: unlighthouse-ci --site www.solutiondesign.com --build-static
+        run: unlighthouse-ci --config-file unlighthouse.config.ts --build-static
 
       - name: Setup Pages
         uses: actions/configure-pages@v3
